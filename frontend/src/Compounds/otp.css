@@ -1,0 +1,58 @@
+
+.input-container {
+    
+    display:flex;
+    flex-direction:column;
+    margin:auto;
+    margin-top:200px;
+    width: 300px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-attachment: fixed;
+    
+}
+  
+  
+  .input-group {
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input[type="email"],
+  .input-group input[type="text"] {
+    border-radius: 10px; /* Creates a rounded shape */
+    padding: 10px 15px;
+    border: 1px solid #ccc; /* Border color */
+    width: calc(100% - 120px); /* Adjust width to accommodate buttons */
+    margin-right: 10px;
+  }
+  
+  .input-group button {
+    margin-top: 10px;
+    border-radius: 10px;
+    top:100px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  /* Style for the "Send OTP" button */
+  .input-group button:nth-child(1) {
+    background-color:green; /* Blue color */
+    color: #731313; /* White text color */
+  }
+  
+  /* Style for the "Verify OTP" button */
+  .input-group button:nth-child(2) {
+    background-color: #3000b4; /* Green color */
+    color: #9c0e0e; /* White text color */
+  }
+  
+
+  
+  
+  
+
+
+  

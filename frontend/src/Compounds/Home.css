@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 50px; /* Adjusted margin-bottom to reduce space */
+  font-size: 2.5em;
+  position: relative;
+}
+
+
+
+.input-container {
+  margin-bottom: 1px;
+  margin-top: 0px; /* Ensure no space at the top */
+}
+
+.input[type='file'] {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button-container {
+  display: flex;
+  color: rgba(57, 245, 142, 0.933);
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between buttons */
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 10px 16px; /* Adjust button padding */
+  font-size: 14px; /* Adjust button font size */
+  color: rgb(0, 0, 0);
+  border: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Full width of the container */
+  max-width: 200px; /* Maximum width of each button */
+}
+
+.dl-classification {
+  background-color: #4CAF50;
+}
+
+.dl-segmentation {
+  background-color: #4CAF50;
+}
+
+.llm-segmentation {
+  background-color: #4CAF50;
+}
+
+.llm-classification {
+  background-color: #4CAF50;
+}
+
+.button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(0);
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.result-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}

@@ -1,0 +1,142 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background: url(C:\Users\sjcex\OneDrive\Desktop\Project_review\Project\frontend\public\neurology.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .background-container {
+    background: rgba(253, 252, 252, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header .text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .header .underline {
+    height: 4px;
+    width: 60px;
+    background-color: #4e54c8;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* To ensure the input field stays within the container */
+  }
+  
+  .input label {
+    flex: 0 0 120px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .input input {
+    flex: 1;
+    max-width: calc(100% - 130px); /* Ensure input field doesn't exceed container width */
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .input input:focus {
+    border-color: #4e54c8;
+    box-shadow: 0 0 8px rgba(78, 84, 200, 0.2);
+  }
+  
+  .input input::placeholder {
+    color: #aaa;
+    opacity: 1; /* Firefox */
+  }
+  
+  .input input:-ms-input-placeholder {
+    color: #aaa;
+  }
+  
+  .input input::-ms-input-placeholder {
+    color: #aaa;
+  }
+  
+  .submit-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .submit {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4e54c8;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .submit.gray {
+    background-color: #aaa;
+    color: #fff;
+  }
+  
+  .submit:hover {
+    background-color: #3a41b2;
+  }
+  
+  .submit.gray:hover {
+    background-color: #888;
+  }
+  
+  .submit-container button:not(:last-child) {
+    margin-right: 10px; /* Add space between buttons */
+  }
+  
+  .error-message {
+    margin-top: 15px;
+    color: #e74c3c;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
